@@ -531,6 +531,9 @@ body {
 
 .todo-item__task {
     width: 230px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    word-wrap: break-word;
     font-size: 2rem;
 }
 
@@ -542,10 +545,11 @@ body {
 .todo-item__delete {
     width: 17px;
     height: 17px;
-
+    flex-shrink: 0;
+    justify-self: flex-end;
     margin-top: 6px;
 
-    background: url("../img/delete.svg");
+    background: url("../img/delete.svg") center/cover no-repeat;
     cursor: pointer;
 }
 
