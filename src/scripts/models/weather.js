@@ -1,6 +1,6 @@
 export class Weather {
     _token = '258398dc28e141dd9cf214842201210';
-    _url = "http://api.weatherapi.com/v1/{file}?{key}&{search}";
+    _url = "https://api.weatherapi.com/v1/{file}?{key}&{search}";
 
     constructor(city) {
         this._city = city;
