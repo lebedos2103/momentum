@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <title>Momentum</title>
+    <script type="module" src="src/scripts/main.js"></script>
+</head>
+<body>
+<div class="page">
+    <header class="page__header header">
+        <section class="todo header__todo">
+            <h3 class="todo__title">Todo</h3>
+            <div class="todo__popup popup popup_hidden">
+                <h3 class="todo__title todo__title_font_big">Todo</h3>
+                <ul class="todo__list">
+<!--                    <li class="todo__list-item todo-item">-->
+<!--                        <input type="checkbox" class="todo-item__checkbox" data-id="1">-->
+<!--                        <p contenteditable="true" class="todo-item__task">Learn JS</p>-->
+<!--                        <div class="todo-item__delete"></div>-->
+<!--                    </li>-->
+<!--                    <li class="todo__list-item todo-item">-->
+<!--                        <input type="checkbox" class="todo-item__checkbox" data-id="2">-->
+<!--                        <p contenteditable="true" class="todo-item__task">Learn JS</p>-->
+<!--                        <div class="todo-item__delete"></div>-->
+<!--                    </li>-->
+                </ul>
+                <input type="text" class="todo__new" placeholder="New Todo">
+            </div>
+        </section>
+        <section class="weather header__weather">
+            <div class="weather__content">
+                <img class="weather__image" src="src/img/mist.png">
+                <p class="weather__temp-wrapper">
+                    <span class="weather__temp"></span>
+                    <span class="weather__celsius weather__celsius_light"></span>
+                </p>
+                <p class="weather__description weather__description_hidden"></p>
+            </div>
+            <h4 class="weather__city"></h4>
+            <div class="weather__popup popup popup_hidden">
+                <div class="weather__city-search">
+                    <h4 contenteditable="true" class="weather__city weather__city_font_big"></h4>
+                    <div class="weather__geolocation"></div>
+                </div>
+                <p class="weather__description" data-set-current="true"></p>
+                <div class="weather__content">
+                    <img class="weather__image" data-set-current="true" src="src/img/mist.png">
+                    <p class="weather__temp-wrapper">
+                        <span class="weather__temp weather__temp_font_big" data-set-current="true"></span>
+                        <span class="weather__celsius weather__celsius_size_big weather__celsius_dark"></span>
+                    </p>
+                </div>
+                <div class="weather__forecast">
+                    <ul class="forecast">
+                        <!--                        <li class="forecast__day day">-->
+                        <!--                            <h5 class="day__name">wed</h5>-->
+                        <!--                            <div class="day__weather weather">-->
+                        <!--                                <div class="weather__content">-->
+                        <!--                                    <img class="weather__image weather__image_size_small" src="src/img/mist.png">-->
+                        <!--                                    <p class="weather__temp-wrapper">-->
+                        <!--                                        <span class="weather__temp weather__temp_font_small">13</span>-->
+                        <!--                                        <span class="weather__celsius weather__celsius_size_small weather__celsius_dark"></span>-->
+                        <!--                                    </p>-->
+                        <!--                                    <p class="weather__description weather__description_hidden">Mist</p>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </li>-->
+                        <!--                        <li class="forecast__day day" data-current="true">-->
+                        <!--                            <h5 class="day__name">thu</h5>-->
+                        <!--                            <div class="day__weather weather">-->
+                        <!--                                <div class="weather__content">-->
+                        <!--                                    <img class="weather__image weather__image_size_small" src="src/img/mist.png">-->
+                        <!--                                    <p class="weather__temp-wrapper">-->
+                        <!--                                        <span class="weather__temp weather__temp_font_small">13</span>-->
+                        <!--                                        <span class="weather__celsius weather__celsius_size_small weather__celsius_dark"></span>-->
+                        <!--                                    </p>-->
+                        <!--                                    <p class="weather__description weather__description_hidden">Mist</p>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </li>-->
+                        <!--                        <li class="forecast__day day">-->
+                        <!--                            <h5 class="day__name">fri</h5>-->
+                        <!--                            <div class="day__weather weather">-->
+                        <!--                                <div class="weather__content">-->
+                        <!--                                    <img class="weather__image weather__image_size_small" src="src/img/mist.png">-->
+                        <!--                                    <p class="weather__temp-wrapper">-->
+                        <!--                                        <span class="weather__temp weather__temp_font_small">13</span>-->
+                        <!--                                        <span class="weather__celsius weather__celsius_size_small weather__celsius_dark"></span>-->
+                        <!--                                    </p>-->
+                        <!--                                    <p class="weather__description weather__description_hidden">Mist</p>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="page__content content">
+        <div class="content__time time">
+            <time class="time__current">
+                <!--                12<span>:</span>23<span>:</span>34 <span class="time__ampm">AM</span>-->
+            </time>
+            <div class="time__menu-wrapper">
+                <div class="menu time__menu menu_popuped">
+                    <div class="menu__item menu__outer circle"></div>
+                    <div class="menu__item menu__inner">
+                        <div class="circle circle_small"></div>
+                        <div class="circle circle_small"></div>
+                        <div class="circle circle_small"></div>
+                    </div>
+                    <div class="time__popup popup popup_padding_light popup_hidden">
+<!--                        <time class="time__format time__format_selected">-->
+<!--                            12<span>:</span>23<span>:</span>34 <span class="time__ampm">AM</span>-->
+<!--                        </time>-->
+<!--                        <time class="time__format">-->
+<!--                            12<span>:</span>23<span>:</span>34 <span class="time__ampm">AM</span>-->
+<!--                        </time>-->
+<!--                        <time class="time__format">-->
+<!--                            12<span>:</span>23<span>:</span>34 <span class="time__ampm">AM</span>-->
+<!--                        </time>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="content__welcome">
+            <span class="content__greeting">Good Morning</span><span>,</span>
+            <span contenteditable="true" data-element-name="name" class="content__name"></span>
+        </h1>
+        <div class="content__purpose purpose">
+            <h2 class="purpose__title">What Is Your Focus For Today?</h2>
+            <h2 contenteditable="true" data-element-name="focus" class="purpose__focus"></h2>
+        </div>
+    </main>
+    <footer class="page__footer footer">
+        <figure class="footer__quote quote">
+            <blockquote class="quote__text">
+                <span>&laquo;</span>
+                <span class="quote__phrase">
+                        </span>
+                <span>&raquo;</span>
+            </blockquote>
+            <figcaption class="quote__author">
+                <span>&mdash;</span>
+                <span class="quote__author-name"></span>
+            </figcaption>
+            <div class="quote__next"></div>
+        </figure>
+    </footer>
+</div>
+</body>
+</html>
